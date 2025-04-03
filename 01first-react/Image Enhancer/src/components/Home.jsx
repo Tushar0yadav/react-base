@@ -13,7 +13,7 @@ const Home = () => {
     setLoading(true);
     try { const enhancedURL = await enhancedImageAPI(file);
       setEnhancedImage(enhancedURL);
-      setloading(false);   
+      setLoading(false);   
     } catch (error) {console.log(error);
       alert("Error while enhancing the image. Please try again later."); }
   };
